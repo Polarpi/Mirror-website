@@ -20,13 +20,45 @@
 	display: block;
 	overflow: hidden;
 	position: relative;
+	padding: 20px 0px;
 }
 
 .timeline-picture img {
 	width: 100%;
 	margin 0;
+}
+
+#img-vert-center {
 	position: relative;
   	top: 50%;
   	transform: translateY(-50%);
   	z-index: 90;
 }
+
+.timeline-picture:hover img {
+	opacity: .9;
+}
+
+.img-description {
+	color: #665D5B;
+}
+
+.img-description2 {
+	color: #665D5B;
+}
+
+.white .img-description, .white .img-description2 {
+	color: #FFFFFF;
+}
+ 
+ .timeline-picture:hover .img-description {
+ 	visibility: visible;
+ 	opacity: 1;
+ 	z-index: 91;
+ }
+
+.timeline-picture:hover .img-description2 {
+ 	visibility: visible;
+ 	opacity: 1;
+ 	z-index: 92;
+ }
