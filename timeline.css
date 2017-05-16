@@ -1,0 +1,23 @@
+.vert-line {
+	border-left: medium solid #59E1C6;
+	height: 400px;
+	width: 2px;
+	position: absolute;
+	left: 60px;
+	top: 450px;
+}
+
+.timeline-picture {
+	width: 75%;
+	height: 500px;
+	margin: auto;
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+
+.timeline-picture img {
+	width: 100%;
+	margin 0;
+	vertical-align: middle;
+}
