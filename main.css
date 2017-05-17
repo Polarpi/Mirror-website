@@ -117,21 +117,22 @@ nav li:hover {
 
 .section-picture {
 	width: 75%;
-	margin: 0 auto;
+	min-height: 200px;
+	max-height: 500px;
+	margin: 20px auto;
 	display: block;
 	overflow: hidden;
 	position: relative;
-	padding: 20px 0px;
+	background-color: #000000;
 }
 
 .section-picture img {
 	width: 100%;
-	max-height: 500px;
 	margin 0;
 }
 
 .section-picture:hover img {
-	opacity: .9;
+	opacity: .7;
 }
 
 .img-description {
@@ -171,3 +172,30 @@ nav li:hover {
  	visibility: visible;
  	opacity: 1;
  }
+ 
+.section-picture:active .img-description, .section-picture:active .img-description2 {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.section-picture:active img {
+	opacity: .7;
+}
+
+.img-story {
+	position: absolute;
+ 	top: 0px;
+ 	left: 15px;
+  	right: 15px;
+  	color: #FFFFFF;
+  	font-family: 'Open Sans Condensed';
+  	font-size: 1.3em;
+  	padding: 2px 3px;
+  	visibility: hidden;
+	opacity: 0;
+}
+
+.section-picture:active .img-story {
+	visibility: visible;
+	opacity: 1;
+}
